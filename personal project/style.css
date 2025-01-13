@@ -1,0 +1,324 @@
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+    font-weight: bold; 
+    text-transform: uppercase;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #555;
+    color: #fff;
+    transform: scale(1.1);
+}
+
+nav a:active {
+    background-color: #777;
+    transform: scale(1);
+}
+
+
+@media screen and (max-width: 768px) {
+    nav {
+        flex-wrap: wrap;
+        padding: 15px 0;
+    }
+
+    nav a {
+        margin: 10px 5px;
+        font-size: 14px;
+    }
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    animation: fadeInContent 1s 1s forwards;
+}
+
+.event-details, .car-models, .gallery {
+    margin-bottom: 40px;
+}
+
+.car-models img {
+    width: 20%; 
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    transition: width 0.3s ease-in-out;
+    opacity: 0;
+    animation: fadeInImage 1s forwards;
+}
+
+.car-models img:hover {
+    width: 25%;
+}
+
+.car-models img:nth-child(1) {
+    animation-delay: 0.5s;
+}
+
+.car-models img:nth-child(2) {
+    animation-delay: 0.7s;
+}
+.gallery-container {
+    padding: 20px;
+    background-color: white;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 1200px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: auto;
+    min-height: 600px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.gallery-item {
+    text-align: center;
+}
+
+.gallery-item img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    animation: fadeInFooter 1s 2s forwards;
+}
+
+
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    .container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        padding: 10px 15px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .car-models img {
+        width: 50%; 
+    }
+
+  
+    .gallery img {
+        width: 30%;
+    }
+}
+@media screen and (max-width: 480px) {
+    
+    body {
+        font-size: 12px;
+    }
+    header, footer {
+        padding: 10px;
+    }
+    .container {
+        width: 95%;
+    }
+    .car-models img {
+        width: 80%;
+    }
+
+    .gallery img {
+        width: 45%;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromTop {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromBottom {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInLinks {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInContent {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInImage {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInFooter {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.contact {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.contact h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+    animation: fadeInTitle 1s ease-in-out;
+}
+
+.contact p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    color: #555;
+    text-align: justify;
+    animation: fadeInParagraph 1s ease-in-out;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+    animation: fadeInForm 1s ease-in-out;
+}
+
+.contact label {
+    font-weight: bold;
+    color: #333;
+}
+
+.contact input,
+.contact textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+    transition: border-color 0.3s;
+}
+
+.contact input:focus,
+.contact textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.contact button {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact button:hover {
+    background-color: #0056b3;
+}
+
+@keyframes fadeInForm {
+    0% { opacity: 0; transform: translateY(10px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+html {
+    scroll-behavior: smooth;
+}
