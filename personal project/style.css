@@ -54,7 +54,8 @@ nav a:active {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     opacity: 0;
     animation: fadeInContent 1s 1s forwards;
-font-weight: bold;
+    font-weight: bold;
+    text-align: center;
 }
 
 .event-details, .car-models, .gallery {
@@ -62,14 +63,14 @@ font-weight: bold;
 }
 
 .car-models img {
-    width: 20%; 
+    width: 30%; 
     height: auto;
     border-radius: 8px;
     margin-bottom: 20px;
     transition: width 0.3s ease-in-out;
     opacity: 0;
     animation: fadeInImage 1s forwards;
-    
+    margin-left: 250px;
 }
 
 .car-models img:hover {
