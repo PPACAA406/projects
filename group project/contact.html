@@ -6,29 +6,43 @@
   <title>Contact</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
-  <header>
-    <h1>Contact Me</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="destinations.html">Destinations</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
-
-  <main>
-    <section>
-      <h2>Get in Touch</h2>
-      <p>Email: <a href="mailto:travel@example.com">travel@example.com</a></p>
-      <audio controls>
-        <source src="media/message.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-      </audio>
-    </section>
-  </main>
-
-  <footer>
-    <p>© 2025 My Travel Blog</p>
-  </footer>
-</body>
+<!-- Same <head> -->
+    <body>
+        <header>
+          <h1>Contact Me</h1>
+          <nav>
+            <a href="index.html">Home</a>
+            <a href="destinations.html">Destinations</a>
+            <a href="contact.html">Contact</a>
+          </nav>
+        </header>
+      
+        <main>
+          <section>
+            <h2>Get in Touch</h2>
+            <form>
+              <label for="name">Name:</label><br>
+              <input type="text" id="name" name="name" required><br><br>
+      
+              <label for="email">Email:</label><br>
+              <input type="email" id="email" name="email" required><br><br>
+      
+              <label for="message">Message:</label><br>
+              <textarea id="message" name="message" rows="5" required></textarea><br><br>
+      
+              <button type="submit">Send</button>
+            </form>
+      
+            <audio controls>
+              <source src="media/message.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+            </audio>
+          </section>
+        </main>
+      
+        <footer>
+          <p>© 2025 My Travel Blog</p>
+        </footer>
+      </body>
+      
 </html>

@@ -74,4 +74,122 @@ body {
     from { opacity: 0; }
     to { opacity: 1; }
   }
+  /* Additions to the existing CSS file */
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
   
+  .card {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 15px;
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  form {
+    max-width: 500px;
+    margin-top: 20px;
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    background-color: #004466;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  
+  }
+  
+  button:hover {
+    background-color: #007799;
+  }
+  
+  aside {
+    background-color: #eef;
+    padding: 15px;
+    margin-top: 20px;
+    border-left: 4px solid #004466;
+  }
+  
+  .trip-planning {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #f4f4f4;
+  }
+  
+  .trip-planning h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .card-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .card {
+    position: relative;
+    width: 300px;
+    height: 180px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .card .overlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 15px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.1em;
+  }
+  .hero-video {
+    width: 100%;
+    height: 80vh; /* Adjust height as needed */
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .hero-video video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+      
