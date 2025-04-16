@@ -1,19 +1,19 @@
-/* GENERAL STYLES */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background: #f7f7f7;
     color: #333;
-    background-image: url('bg2.jpg');  /* Add background image */
-    background-size: cover; /* Ensures the image covers the entire viewport */
-    background-position: center; /* Centers the image */
-    background-attachment: fixed; /* Keeps the background fixed during scrolling */
+    background-image: url('bg2.jpg');  
+    background-size: cover; 
+    background-position: center; 
+    background-attachment: fixed; 
   }
   
-  /* HEADER STYLES */
+
   header {
-    background-color: rgba(0, 68, 102, 0.8); /* Transparent background */
+    background-color: rgba(0, 68, 102, 0.8); 
     color: white;
     padding: 1rem;
     text-align: center;
@@ -31,7 +31,7 @@ body {
     margin-top: 2rem;
   }
   
-  /* SOCIALS SECTION */
+  
   .socials {
     text-align: center;
     margin: 3rem 0;
@@ -65,7 +65,7 @@ body {
     transform: scale(1.1);
   }
   
-  /* FORM STYLES */
+
   form {
     max-width: 600px;
     margin: 0 auto;
@@ -73,7 +73,7 @@ body {
     background-color: #fff;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-    opacity: 0.9; /* Adds slight transparency for better background view */
+    opacity: 0.9; 
   }
   
   form label {
@@ -101,7 +101,6 @@ body {
     background-color: #00344b;
   }
   
-  /* FOOTER */
   footer {
     text-align: center;
     padding: 1rem;

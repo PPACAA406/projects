@@ -1,4 +1,4 @@
-/* GENERAL STYLES */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -26,7 +26,7 @@ body {
     margin-top: 2rem;
   }
   
-  /* CARD SECTION */
+
   .card-container {
     display: flex;
     flex-wrap: wrap;
@@ -51,7 +51,7 @@ body {
   
   .card img {
     width: 100%;
-    height: 180px; /* Slightly taller for better visual */
+    height: 180px; 
     object-fit: cover;
     display: block;
   }
@@ -65,7 +65,7 @@ body {
     color: #777;
   }
   
-  /* TABLE SECTION */
+
   .destination-table {
     padding: 2rem;
     text-align: center;
@@ -98,7 +98,7 @@ body {
     background-color: #f2f2f2;
   }
   
-  /* FOOTER */
+
   footer {
     text-align: center;
     padding: 1rem;
