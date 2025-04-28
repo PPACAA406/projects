@@ -1,106 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Group Project</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Travel Blog</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <script src="main.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 
 <body>
-    <header>
-      <h1>My Travel Blog</h1>
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="destinations.html">Destinations</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-    </header>
-  
-    <main>
-      <section class="intro">
-        <h2>Welcome!</h2>
-        <p>Explore the world through my travel experiences.</p>
-        <section class="hero-video">
-            <video autoplay muted loop playsinline>
-              <source src="maldive.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-            </video>
-          </section>
-          
-        
+  <header>
+    <h1>My Travel Blog</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="destinations.html">Destinations</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="intro">
+      <h2>Welcome!</h2>
+      <p>Explore the world through my travel experiences.</p>
+
+      <section class="hero-video">
+        <video autoplay muted loop playsinline>
+          <source src="maldive.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
       </section>
-  
-      <section class="tips">
-        <h2>Travel Tips</h2>
-        <div class="card-container">
-          <article class="card">
-            <h3>Pack Light</h3>
-            <p>Only bring what you absolutely need!</p>
-          </article>
-          <article class="card">
-            <h3>Stay Safe</h3>
-            <p>Always keep emergency contacts and local info handy.</p>
-          </article>
-          <article class="card">
-            <h3>Be Curious</h3>
-            <p>Try new food, learn phrases, meet locals.</p>
-          </article>
+    </section>
+
+    <section class="tips">
+      <h2>Travel Tips</h2>
+      <div class="card-container">
+        <article class="card">
+          <h3>Pack Light</h3>
+          <p>Only bring what you absolutely need!</p>
+        </article>
+        <article class="card">
+          <h3>Stay Safe</h3>
+          <p>Always keep emergency contacts and local info handy.</p>
+        </article>
+        <article class="card">
+          <h3>Be Curious</h3>
+          <p>Try new food, learn phrases, meet locals.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="mb-5">
+      <h2 class="text-center">Personalize Your Greeting</h2>
+      <form id="myForm" class="row g-3 justify-content-center">
+        <div class="col-md-4">
+          <input type="text" id="username" class="form-control" placeholder="Enter your name">
         </div>
-      </section>
-  
-      <aside>
-        <p>Check out more awesome blogs at 
-          <a href="https://www.nomadicmatt.com" target="_blank">Nomadic Matt</a> 🌍
-        </p>
-      </aside>
-
-
-      <section class="trip-planning">
-        <h2>Start Planning Your Trip</h2>
-        <div class="card-grid">
-          <a href="https://www.nomadicmatt.com/get-inspired-travel/" class="card" style="background-image: url('photo1.jpeg');">
-            <div class="overlay">Getting Inspired</div>
-          </a>
-          <a href="https://www.nomadicmatt.com/save-for-trip-advice/" class="card" style="background-image: url('photo2.jpeg');">
-            <div class="overlay">How to Save For a Trip</div>
-          </a>
-          <a href="https://www.nomadicmatt.com/how-to-plan-your-trip/" class="card" style="background-image: url('photo3.jpeg');">
-            <div class="overlay">How to Plan Your Trip</div>
-          </a>
-          <a href="https://www.nomadicmatt.com/gear-insurance-tech/" class="card" style="background-image: url('photo4.jpeg');">
-            <div class="overlay">Getting the Right Gear</div>
-          </a>
-          <a href="https://www.nomadicmatt.com/airline-ticket-advice/" class="card" style="background-image: url('photo5.jpeg');">
-            <div class="overlay">Finding Cheap Airfare</div>
-          </a>
-          <a href="https://www.nomadicmatt.com/find-cheap-places-to-stay/" class="card" style="background-image: url('photo6.jpeg');">
-            <div class="overlay">Finding Accommodation</div>
-          </a>
-          <a href="https://www.nomadicmatt.com/life-on-road/" class="card" style="background-image: url('photo7.jpeg');">
-            <div class="overlay">Life On The Road</div>
-          </a>
-          <a href="https://www.nomadicmatt.com/female-travel-tips/" class="card" style="background-image: url('photo8.jpeg');">
-            <div class="overlay">Solo Female Travel</div>
-          </a>
-          <a href="https://www.nomadicmatt.com/family-and-senior-travel/" class="card" style="background-image: url('photo9.jpeg');">
-            <div class="overlay">Family & Senior Travel</div>
-          </a>
+        <div class="col-md-4">
+          <select id="colors" class="form-select">
+            <option value="">Choose a Color</option>
+            <option>Red</option>
+            <option>Blue</option>
+            <option>Green</option>
+          </select>
         </div>
-      </section>
-      
-      
-    </main>
+        <div class="col-12 text-center">
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+      </form>
 
-    
-  
-    <footer>
-      <p>© 2025 My Travel Blog</p>
-    </footer>
-  </body>
-  
+      <div id="output" class="mt-4 text-center" style="display: none;"></div>
+    </section>
+
+    <aside>
+      <p>Check out more awesome blogs at 
+        <a href="https://www.nomadicmatt.com" target="_blank" rel="noopener noreferrer">Nomadic Matt 🌍</a>
+      </p>
+    </aside>
+
+    <section class="trip-planning">
+      <h2>Start Planning Your Trip</h2>
+      <div class="card-grid">
+        <a href="https://www.nomadicmatt.com/get-inspired-travel/" class="card" style="background-image: url('photo1.jpeg');">
+          <div class="overlay">Getting Inspired</div>
+        </a>
+        <a href="https://www.nomadicmatt.com/save-for-trip-advice/" class="card" style="background-image: url('photo2.jpeg');">
+          <div class="overlay">How to Save For a Trip</div>
+        </a>
+        <a href="https://www.nomadicmatt.com/how-to-plan-your-trip/" class="card" style="background-image: url('photo3.jpeg');">
+          <div class="overlay">How to Plan Your Trip</div>
+        </a>
+        <a href="https://www.nomadicmatt.com/gear-insurance-tech/" class="card" style="background-image: url('photo4.jpeg');">
+          <div class="overlay">Getting the Right Gear</div>
+        </a>
+        <a href="https://www.nomadicmatt.com/airline-ticket-advice/" class="card" style="background-image: url('photo5.jpeg');">
+          <div class="overlay">Finding Cheap Airfare</div>
+        </a>
+        <a href="https://www.nomadicmatt.com/find-cheap-places-to-stay/" class="card" style="background-image: url('photo6.jpeg');">
+          <div class="overlay">Finding Accommodation</div>
+        </a>
+        <a href="https://www.nomadicmatt.com/life-on-road/" class="card" style="background-image: url('photo7.jpeg');">
+          <div class="overlay">Life On The Road</div>
+        </a>
+        <a href="https://www.nomadicmatt.com/female-travel-tips/" class="card" style="background-image: url('photo8.jpeg');">
+          <div class="overlay">Solo Female Travel</div>
+        </a>
+        <a href="https://www.nomadicmatt.com/family-and-senior-travel/" class="card" style="background-image: url('photo9.jpeg');">
+          <div class="overlay">Family & Senior Travel</div>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 My Travel Blog</p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="main.js"></script>
 </body>
 </html>
