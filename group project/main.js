@@ -46,3 +46,7 @@ document.addEventListener("DOMContentLoaded", function () {
     output.text(message).fadeIn(500).delay(2000).fadeOut(500);
   });
 });
+
+$(document).ready(function() {
+  console.log("jQuery is working!");
+});
